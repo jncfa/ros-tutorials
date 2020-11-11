@@ -1,0 +1,12 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtlesim" output="screen"/>
+
+    <node pkg="faria_turtlebot_tutorial" type="basic-controller.py" name="controller" output="screen">
+        
+        <!--<remap from="cmd_vel" to="turtle1/cmd_vel"/> -->
+
+        <param name="turtle_name" value="/turtle1"/>
+        <param name="linear_speed" value="1.0"/>
+        <param name="angular_speed" value="1.0"/>
+    </node>
+</launch>

@@ -1,0 +1,7 @@
+<launch>
+
+	<node pkg="stage_ros" type="stageros" name="stage_ros" args="$(find faria_stage_tutorial)/worlds/rooms.world" />
+
+	<node pkg="faria_stage_tutorial" type="reactive_navigation.py" name="reactive_navigation" output="screen"/>
+
+</launch>
